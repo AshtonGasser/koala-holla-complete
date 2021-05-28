@@ -16,7 +16,7 @@ const koalaRouter = express.Router();
 // pool.on('error', (error) => {
 //     console.log(error);
 // });
-const pool = require('./modules/pool')
+const pool = require('../modules/pool.js')
 // GET
 koalaRouter.get('/', (req, res) => {
     let queryText = 'SELECT * FROM "koalas" ORDER BY "name";';
